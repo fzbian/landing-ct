@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChinaTown Logistic | En construcción</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #0ea5e9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(14,165,233,0.04), rgba(14,165,233,0)), var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+    .card {
+      width: min(960px, 100%);
+      background: var(--card);
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .logo img {
+      width: clamp(120px, 32vw, 180px);
+      height: auto;
+      filter: drop-shadow(0 6px 12px rgba(15, 23, 42, 0.08));
+    }
+    @media (min-width: 768px) {
+      .logo {
+        justify-content: flex-start;
+      }
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(14,165,233,0.12);
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    h1 {
+      margin: 20px 0 12px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+    }
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 24px;
+    }
+    .panel {
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .qr {
+      display: grid;
+      place-items: center;
+      gap: 8px;
+      padding: 12px;
+      border-radius: 12px;
+      background: #ffffff;
+      border: 1px dashed #cbd5e1;
+      min-height: 220px;
+    }
+    img {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 6px 18px rgba(15, 23, 42, 0.18));
+    }
+    small { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="logo">
+      <!-- Reemplaza el src con tu logo en logo.png -->
+      <img src="logo.png" alt="Logotipo de la empresa" loading="lazy" />
+    </div>
+    <span class="pill">ChinaTown Logistic • En desarrollo</span>
+    <h1>ChinaTown Logistic está creando algo increíble para tus servicios de logística</h1>
+    <p>
+      Estamos trabajando para lanzar una experiencia ágil, segura y a tu medida.
+      Mientras tanto, contáctanos por WeChat para información y soporte directo.
+    </p>
+
+    <div class="grid">
+      <section class="panel">
+        <h3 style="margin: 0 0 8px;">Disponibilidad</h3>
+        <p style="margin: 0;">Operamos 24/7 coordinando envíos, almacén y última milla.</p>
+      </section>
+      <section class="panel">
+        <h3 style="margin: 0 0 8px;">Respuesta ágil</h3>
+        <p style="margin: 0;">Un agente responde en minutos para priorizar tus pedidos.</p>
+      </section>
+      <section class="panel qr" aria-label="Código QR de WeChat">
+        <!-- Reemplaza el src con la imagen de tu código QR -->
+        <img src="qr-wechat.jpg" alt="Escanea para chatear por WeChat" />
+        <small>Escanea el QR o envíanos un mensaje directo.</small>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
