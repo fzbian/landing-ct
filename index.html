@@ -103,7 +103,16 @@
   <main class="card" role="main">
     <div class="logo">
       <!-- Reemplaza el src con tu logo en logo.webp -->
-      <img src="logo.webp" alt="Logotipo de la empresa" loading="lazy" />
+      <img
+        src="logo.webp"
+        alt="Logotipo de la empresa"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="high"
+        width="180"
+        height="180"
+        sizes="(min-width: 768px) 180px, 140px"
+      />
     </div>
     <span class="pill">ChinaTown Logistic • En desarrollo</span>
     <h1>ChinaTown Logistic está creando algo increíble para tus servicios de logística</h1>
@@ -123,7 +132,15 @@
       </section>
       <section class="panel qr" aria-label="Código QR de WeChat">
         <!-- Reemplaza el src con la imagen de tu código QR -->
-        <img src="qr-wechat.webp" alt="Escanea para chatear por WeChat" />
+        <img
+          src="qr-wechat.webp"
+          alt="Escanea para chatear por WeChat"
+          loading="lazy"
+          decoding="async"
+          width="180"
+          height="180"
+          sizes="(min-width: 768px) 180px, 140px"
+        />
         <small>Escanea el QR o envíanos un mensaje directo.</small>
       </section>
     </div>
